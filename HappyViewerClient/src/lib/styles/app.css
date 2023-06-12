@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+button {
+    /* inherit tailwindcss classes */
+    @apply bg-blue-500 text-white font-bold py-1 px-2 my-1 rounded;
+}
+button:hover {
+    /* inherit tailwindcss classes */
+    @apply bg-blue-700;
+}
+input[type="submit"] {
+    /* inherit tailwindcss classes */
+    @apply bg-blue-500 text-white font-bold py-1 px-2 my-1 rounded;
+}
+input[type="submit"]:hover {
+    /* inherit tailwindcss classes */
+    @apply bg-blue-700;
+}
+input[type="email"], input[type="password"], input[type="text"] {
+    /* inherit tailwindcss classes */
+    @apply bg-gray-200 text-gray-700 font-semibold py-1 px-2 my-1 rounded;
+}
+h1 {
+    @apply text-center font-bold sm:text-[1.75rem] text-[1.5rem];
+}
+h2 {
+    @apply text-center font-bold sm:text-[1.5rem] text-[1.25rem];
+}
+.main {
+    @apply h-screen w-screen grid place-content-center;
+}

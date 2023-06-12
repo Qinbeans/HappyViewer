@@ -6,6 +6,16 @@ declare global {
 		// interface Locals {}
 		// interface PageData {}
 		// interface Platform {}
+		interface Platform {
+	        env: {
+				DB_URL: DurableObjectNamespace;
+				DB_NAME: DurableObjectNamespace;
+	        };
+	        context: {
+	            waitUntil(promise: Promise<any>): void;
+	        };
+	        caches: CacheStorage & { default: Cache }
+		}
 	}
 }
 
